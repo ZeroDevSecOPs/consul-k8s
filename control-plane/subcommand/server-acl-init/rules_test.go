@@ -444,6 +444,7 @@ func TestSyncRules(t *testing.T) {
 			Expected: `node "k8s-sync" {
     policy = "write"
   }
+  policy = "write"
   node_prefix "" {
     policy = "read"
   }
@@ -460,6 +461,7 @@ func TestSyncRules(t *testing.T) {
 			Expected: `node "new-node-name" {
     policy = "write"
   }
+  policy = "write"
   node_prefix "" {
     policy = "read"
   }
@@ -478,6 +480,7 @@ func TestSyncRules(t *testing.T) {
   }
 operator = "write"
 namespace "sync-namespace" {
+  policy = "write"
   node_prefix "" {
     policy = "read"
   }
@@ -497,6 +500,7 @@ namespace "sync-namespace" {
   }
 operator = "write"
 namespace "sync-namespace" {
+  policy = "write"
   node_prefix "" {
     policy = "read"
   }
@@ -516,6 +520,7 @@ namespace "sync-namespace" {
   }
 operator = "write"
 namespace_prefix "" {
+  policy = "write"
   node_prefix "" {
     policy = "read"
   }
@@ -535,6 +540,7 @@ namespace_prefix "" {
   }
 operator = "write"
 namespace_prefix "" {
+  policy = "write"
   node_prefix "" {
     policy = "read"
   }
@@ -555,6 +561,7 @@ namespace_prefix "" {
   }
 operator = "write"
 namespace_prefix "prefix-" {
+  policy = "write"
   node_prefix "" {
     policy = "read"
   }
@@ -575,6 +582,7 @@ namespace_prefix "prefix-" {
   }
 operator = "write"
 namespace_prefix "prefix-" {
+  policy = "write"
   node_prefix "" {
     policy = "read"
   }
