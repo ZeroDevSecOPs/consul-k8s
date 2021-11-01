@@ -479,6 +479,7 @@ func TestSyncRules(t *testing.T) {
     policy = "write"
   }
 operator = "write"
+acl = "write"
 namespace "sync-namespace" {
   policy = "write"
   node_prefix "" {
@@ -499,6 +500,7 @@ namespace "sync-namespace" {
     policy = "write"
   }
 operator = "write"
+acl = "write"
 namespace "sync-namespace" {
   policy = "write"
   node_prefix "" {
@@ -519,6 +521,7 @@ namespace "sync-namespace" {
     policy = "write"
   }
 operator = "write"
+acl = "write"
 namespace_prefix "" {
   policy = "write"
   node_prefix "" {
@@ -539,6 +542,7 @@ namespace_prefix "" {
     policy = "write"
   }
 operator = "write"
+acl = "write"
 namespace_prefix "" {
   policy = "write"
   node_prefix "" {
@@ -560,6 +564,7 @@ namespace_prefix "" {
     policy = "write"
   }
 operator = "write"
+acl = "write"
 namespace_prefix "prefix-" {
   policy = "write"
   node_prefix "" {
@@ -581,6 +586,7 @@ namespace_prefix "prefix-" {
     policy = "write"
   }
 operator = "write"
+acl = "write"
 namespace_prefix "prefix-" {
   policy = "write"
   node_prefix "" {
