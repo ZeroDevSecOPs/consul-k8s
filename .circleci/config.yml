@@ -70,7 +70,7 @@ commands:
         type: string
       consul-k8s-image:
         type: string
-        default: "ashwinvenkatesh/consul-k8s@sha256:4e50333a4972522c3041c874916382bd1625284e27fdf805a364a088682e7fbc"
+        default: "ashwinvenkatesh/consul-k8s@sha256:340ea7aef2a74345a15c1be81c0af5d292399629323717f962b07098fc3a3d27"
       go-path:
         type: string
         default: "/home/circleci/.go_workspace"

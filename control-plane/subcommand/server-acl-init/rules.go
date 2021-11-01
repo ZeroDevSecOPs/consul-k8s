@@ -339,6 +339,7 @@ partition "{{ .PartitionName }}" {
   acl = "write"
 {{- else }}
   operator = "write"
+  acl = "write"
 {{- end }}
 {{- if .EnableNamespaces }}
 {{- if .InjectEnableNSMirroring }}

@@ -779,6 +779,7 @@ func TestControllerRules(t *testing.T) {
 			Name: "namespaces=disabled, partitions=disabled",
 			Expected: `
   operator = "write"
+  acl = "write"
     service_prefix "" {
       policy = "write"
       intentions = "write"
@@ -790,6 +791,7 @@ func TestControllerRules(t *testing.T) {
 			DestConsulNS:     "consul",
 			Expected: `
   operator = "write"
+  acl = "write"
   namespace "consul" {
     service_prefix "" {
       policy = "write"
@@ -803,6 +805,7 @@ func TestControllerRules(t *testing.T) {
 			Mirroring:        true,
 			Expected: `
   operator = "write"
+  acl = "write"
   namespace_prefix "" {
     service_prefix "" {
       policy = "write"
@@ -817,6 +820,7 @@ func TestControllerRules(t *testing.T) {
 			MirroringPrefix:  "prefix-",
 			Expected: `
   operator = "write"
+  acl = "write"
   namespace_prefix "prefix-" {
     service_prefix "" {
       policy = "write"
